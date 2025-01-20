@@ -91,7 +91,42 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="网页测试"><a href="#网页测试" class="headerlink" title="网页测试"></a>网页测试</h2><h3 id="png插入测试"><a href="#png插入测试" class="headerlink" title="png插入测试"></a>png插入测试</h3><p><img src="/images/test0.png" alt="png-test"></p>
+        <h2 id="网页测试"><a href="#网页测试" class="headerlink" title="网页测试"></a>网页测试</h2><h3 id="表格插入测试"><a href="#表格插入测试" class="headerlink" title="表格插入测试"></a>表格插入测试</h3><table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+<th>表头3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>内容1</td>
+<td>内<br>容2</td>
+<td>内容3</td>
+</tr>
+<tr>
+<td>内容4</td>
+<td>内容<br>5</td>
+<td>内容6</td>
+</tr>
+</tbody></table>
+<!-- 
+语法说明
+
+    表头：
+        使用 | 分隔表头单元格。
+        每列标题间可以有任意数量的空格，空格会被忽略。
+
+    对齐方式：
+        使用 - 在表头下方定义表格内容对齐方式：
+            :--- 左对齐
+            :---: 居中对齐
+            ---: 右对齐
+          
+    在表格内容中使用 <br> 实现换行
+ -->
+
+<h3 id="png插入测试"><a href="#png插入测试" class="headerlink" title="png插入测试"></a>png插入测试</h3><p><img src="/images/test0.png" alt="png-test"></p>
 <p>这张图展示了111，下面尝试缩放大小</p>
 <img src="images/test0.png" width="500" height="300" />
 
