@@ -69,148 +69,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-abstract" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/27/abstract/" class="article-date">
-  <time class="dt-published" datetime="2025-01-27T14:21:08.000Z" itemprop="datePublished">2025-01-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/27/abstract/">1. 项目内容</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="网页测试">网页测试</h2>
-<!-- 文章日期越靠后，文章越靠前 -->
-<h3 id="表格插入测试">表格插入测试</h3>
-<table>
-<thead>
-<tr>
-<th>表头1</th>
-<th>表头2</th>
-<th>表头3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>内容1</td>
-<td>内<br>容2</td>
-<td>内容3</td>
-</tr>
-<tr>
-<td>内容4</td>
-<td>内容<br>5</td>
-<td>内容6</td>
-</tr>
-</tbody>
-</table>
-<!-- 
-语法说明
-
-    表头：
-        使用 | 分隔表头单元格。
-        每列标题间可以有任意数量的空格，空格会被忽略。
-
-    对齐方式：
-        使用 - 在表头下方定义表格内容对齐方式：
-            :--- 左对齐
-            :---: 居中对齐
-            ---: 右对齐
-          
-    在表格内容中使用 <br> 实现换行
- -->
-<h3 id="png插入测试">png插入测试</h3>
-<figure>
-<img src="images/test0.png" alt="png-test" />
-<figcaption aria-hidden="true">png-test</figcaption>
-</figure>
-<p>这张图展示了111，下面尝试缩放大小</p>
-<p><img src="images/test0.png" width="500" height="300" /></p>
-<h3 id="jpg插入测试">jpg插入测试</h3>
-<figure>
-<img src="images/test0.jpg" alt="jpg-test" />
-<figcaption aria-hidden="true">jpg-test</figcaption>
-</figure>
-<p>上图展示了111</p>
-<h2 id="gif插入测试">gif插入测试</h2>
-<figure>
-<img src="images/test0.gif" alt="gif-test" />
-<figcaption aria-hidden="true">gif-test</figcaption>
-</figure>
-<p>上图展示了111</p>
-<h2 id="pngjpg图片组合显示">png/jpg图片组合显示</h2>
-并排显示：
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-<p><img src="images/test0.png" style="width: 100%;" />
-<img src="images/test0.jpg" style="width: 100%;" /></p>
-</div>
-居中插入：
-<center>
-<img src="images/test0.jpg" alt="jpg-test">
-</center>
-<!-- <div style="display: inline-block; width: 48%;">
-  <img src="images/test0.png" width="100%" />
-</div>
-<div style="display: inline-block; width: 48%;">
-  <img src="images/test0.jpg" width="100%" />
-</div> -->
-四宫格显示：
-<div
-style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px;">
-<p><img src="images/test0.png" style="width: 100%;" /> <!-- （1,1） -->
-<img src="images/test0.jpg" style="width: 100%;" /> <!-- （1,2） -->
-<img src="images/test0.gif" style="width: 100%;" /> <!-- （2,1） -->
-<img src="images/test0.png" style="width: 100%;" /> <!-- （2,2） --></p>
-</div>
-<!--  -->
-<h2 id="gif动图组合显示">gif动图组合显示</h2>
-并排显示：
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-<p><img src="images/test0.gif" style="width: 100%;" />
-<img src="images/test0.gif" style="width: 100%;" /></p>
-</div>
-<!-- 【嵌入视频的流程】分享 → 嵌入代码 → src处填入相应链接 -->
-<h2 id="blibli国内网站视频嵌入测试">blibli国内网站视频嵌入测试</h2>
-<div
-style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-<p><iframe 
-  src="//player.bilibili.com/player.html?isOutside=true&aid=365428124&bvid=BV1f94y157Qa&cid=1318715313&p=1" 
-  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></p>
-</div>
-<h2 id="youtube外网视频嵌入测试">youtube外网视频嵌入测试</h2>
-<div
-style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-<p><iframe 
-  src="https://www.youtube.com/embed/kBV2rfwO3m0?si=s_nLttHc4_yoKlKc" 
-  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></p>
-</div>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/27/abstract/" data-id="cm677117n0007hk7k6aaj3lgc" data-title="1. 项目内容" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-2-5outcome" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/01/21/2-5outcome/" class="article-date">
@@ -250,7 +108,7 @@ style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-5outcome/" data-id="cm677117n0006hk7k7lwgbqfh" data-title="研究进展五：样机研制与人机交互应用示范" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-5outcome/" data-id="cm6787qst0005m07k4akcda9o" data-title="研究进展五：样机研制与人机交互应用示范" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -294,7 +152,7 @@ style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-4outcome/" data-id="cm677117n0004hk7kbyubf4es" data-title="研究进展四：轻量化协作机器人柔顺控制与振动抑制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-4outcome/" data-id="cm6787qst0003m07k2i908m4a" data-title="研究进展四：轻量化协作机器人柔顺控制与振动抑制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -345,7 +203,7 @@ id="基于多路canopen通讯方案的七轴协作机器人样机搭建">3.2.2�
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-3outcome/" data-id="cm677117m0003hk7k3iez69xq" data-title="研究进展三：协作机器人轻量化设计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-3outcome/" data-id="cm6787qst0002m07kblrg030p" data-title="研究进展三：协作机器人轻量化设计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -390,23 +248,13 @@ kg∙m^2，对应计算的惯量比依次为R=3.10，2.33，1.86，1.55，1.33�
 18所示，当惯量比R增大时，反谐振频率ω_a^f保持106.4 rad/s，谐振频率ω_r由
 48Hz 变为
 64Hz，增加了33.3%。也就是说，增大一体化关节的惯量比，会增大ω_a^f与ω_r的差距，有利于提高控制的稳定性。</p>
-<figure>
-<img src="images/2-2-18.png"
-alt="图 18 不同惯量比下，一体化关节的伯德图" />
-<figcaption aria-hidden="true">图 18
-不同惯量比下，一体化关节的伯德图</figcaption>
-</figure>
+
 <p>为了探究关节刚度对关节动态性能的影响，将刚度K_j依次设置为0.5，0.8，1，1.5，2倍的刚度19576
 Nm/rad。不同刚度下，关节的伯德图如图 19所示。
 随着一体化关节刚度的增加，系统的谐振与反谐振频率都会随之增大。系统的谐振频率ω_r由56
 Hz 变为74 Hz，增加了32.1%，反谐振频率ω_a^f由22 Hz 变为 44
 Hz，增加了100%。因此，关节刚度越大，一体化关节的动态响应就越好。</p>
-<figure>
-<img src="images/2-2-19.png"
-alt="图 19 不同刚度下，一体化关节的伯德图" />
-<figcaption aria-hidden="true">图 19
-不同刚度下，一体化关节的伯德图</figcaption>
-</figure>
+
 <p>综上，大惯量比、高刚度的关节，转矩控制性能更高，动态响应更好。因此，通过合理配置谐振频率与反谐振频率，并拉大谐振与反谐振频率的差距，可以为后续高带宽的协作机器人柔顺控制的实现打下基础。</p>
 <h2 id="高效高转矩密度一体化关节设计">2.2
 高效高转矩密度一体化关节设计</h2>
@@ -415,18 +263,15 @@ alt="图 19 不同刚度下，一体化关节的伯德图" />
 <p>我们制作了一体化关节样机，并搭建一体化关节正向、反向测试平台（图22）。测试结果表一体化关节的转矩密度分别为28.8
 N.m/kg、反向驱动力矩分别为1.36 N.m（（a）转矩-电流曲线
 （b）反向驱动转矩（正弦激励）图23）。总体而言，基于中空式轴向磁通电机+内置式行星减速器的一体化关节能较好的实现高转矩密度、良好的双向驱动效率和扁平化的外型。</p>
-<p><img src="images/2-2-20.png" alt="图20 一体化关节结构原理" /> <img
-src="images/2-2-21.png" alt="图21 磁场解析模型" /> <img
-src="images/2-2-22.png" alt="图22一体化关节样机" /> <img
-src="images/2-2-23.png" alt="图23 一体化关节测试结果" /></p>
+
+
+
+
 <h2 id="一体化关节样机试制">2.3 一体化关节样机试制</h2>
 <p>模块化关节作为轻量化协作机器人的核心驱动单元。为了满足不同的输出力矩需求，我们设计了大、中、小三款一体化关节。如((a)爆炸图
 (b) 实物图 图
 24)所示，关节主要由永磁力矩电机、谐波减速器、位置编码器、力矩传感器以及其他必要的结构部件组成。关节模块化的设计具有易拆装、易维护的优点和较高的输出力矩-自重比，同时，配备多种传感器。它的驱动控制单元集成在关节电机端，这保证了关节的驱动和控制的一体化设计，而输出法兰、制动器罩等机械零部件保证了关节的模块化应用需求，可以最大程度地减少关节结构的差异，增强关节零部件之间的互换性。高功率密度的力矩电机作为关节的动力源，高负载自重比和结构紧凑的谐波减速器作为关节的传动部件，高分辨率的电机端位置编码器和输出端位置编码器用来采集关节两端的位置信号，扭矩传感器用于获取关节运动中的扭矩。这样就形成兼具结构紧凑与轻量化的关节一体化集成设计。</p>
-<figure>
-<img src="images/2-2-24.png" alt="图 24 协作机器人一体化关节" />
-<figcaption aria-hidden="true">图 24 协作机器人一体化关节</figcaption>
-</figure>
+
 <p>关节的力矩电机为团队自主研发的表贴式三相永磁同步力矩电机。谐波减速器选用日本哈默纳科公司的CSG系列型号。电机端位置编码器选用东莞盈动高科公司的增量式编码器CAPRO系列型号，通讯协议为BISS通信，分辨率达到32768counts。负载端位置编码器选用以色列Netzer公司的绝对式编码器DS系列型号，通讯协议为SSI通信，分辨率达到524288counts。力矩传感器选用台湾煜昕科技有限公司的HD2-150和HD2-300系列型号，经过实测性能分析，力矩测量精度达到0.67%力幅，动态响应速度小于15ms，根据关节负载需求，分别采用150Nm
 和300Nm
 量程的力矩传感器。制动器选用COMBIPERM-P1.310系列型号，制动力矩大于2倍电机额定转矩。试制的大、中、小的一体化关节的各项设计参数如下表所示。</p>
@@ -566,34 +411,23 @@ src="images/2-2-23.png" alt="图23 一体化关节测试结果" /></p>
 基于双干扰观测器和预测前馈的柔性关节柔顺控制技术</h2>
 <p>柔性关节的柔顺控制依赖于准确的外力矩感知和有效的内部干扰补偿技术。以前的大多数工作是使用内置的扭矩传感器和基于单个编码器的集总干扰观测器，这增加了系统的重量和集成的成本。我们提出了双干扰观测器(DDOB)+前馈(FF)和反馈(FB)控制器的新型三元复合位置控制架构，该架构在内环中可以实现更好的跟踪精度和扰动拒止能力，整体的导纳控制架构如图
 25所示。</p>
-<figure>
-<img src="images/2-2-25.png"
-alt="图 25 基于内环“前馈+反馈+双干扰观测器”的柔性关节导纳控制架构" />
-<figcaption aria-hidden="true">图 25
-基于内环“前馈+反馈+双干扰观测器”的柔性关节导纳控制架构</figcaption>
-</figure>
+
 <p>在柔性关节中，摩擦力、环境对关节的交互力等低频干扰普遍存在，这显著降低了一体化关节的跟踪精度。因此，我们基于柔性关节双编码器的配置，设计了一种双干扰观测器(DDOB)。如图
 26所示，这种双干扰观测器实现了关节内部摩擦力矩和关节与外环境的交互力矩的分离式估计与抑制。该观测器结合前馈和反馈控制形成了一种新型的三元控制架构。相比传统的三元控制架构，可以实现更好的干扰抑制和位置控制性能，同时估计的外力矩可以导入期望的导纳模型中，从而实现柔性关节的无扭矩传感器导纳控制。</p>
-<figure>
-<img src="images/2-2-26.png" alt="图 26 双干扰观测器设计" />
-<figcaption aria-hidden="true">图 26 双干扰观测器设计</figcaption>
-</figure>
+
 <p>由于估计的外力经由导纳控制器会使得实际轨迹无法预知，进而导致前馈控制器实施困难，因此，如图
 27所示，我们提出了基于多项式外推的轨迹预测来为非因果部分的前馈控制器提供实时信号，而预测误差对输出造成的扰动可以通过最小节拍控制方法来补偿。具体是基于最古老时刻的预测信号和动态更新的比例系数来设计单一的误差补偿器，从而在有限时间间隔内实现扰动的消除。</p>
-<figure>
-<img src="images/2-2-27.png" alt="图 27 预测前馈控制器设计" />
-<figcaption aria-hidden="true">图 27 预测前馈控制器设计</figcaption>
-</figure>
+
 <p>提出的方法在如图
 28中搭建的柔顺关节实验平台上进行了验证。首先是内环的位置跟踪实验。假设参考轨迹预知，我们比较了四种不同的位置控制方法，四种方法包括前馈+反馈(E1)，前馈+反馈+电机端干扰观测器(E2)，前馈+反馈+连杆端干扰观测器(E3)和提出的前馈+反馈+双干扰观测器(E4)。从图
 29可以看出，这四种方法得到的最大跟踪误差分别为3.93mrad，3.62mrad，2.38mrad和2.00mand,
 而四种方法的均方根误差指标为1.53mrad，1.40mrad，0.71mrad和0.52mrad。提出的内环位置控制器E4相比传统方法至少降低跟踪误差26.8%；在导纳实验中，如图
 30，估计的外力矩和实际测量的外力矩基本吻合，证明了设计的外力矩估计器的正确性。如图
 31所示，提出的导纳控制架构实现的导纳特性与期望的导纳特性吻合度达91.38%，证明了提出方法的优越性。</p>
-<p><img src="images/2-2-28.png" alt="图 28 柔性关节实验平台" /> <img
-src="images/2-2-29.png" alt="图 29 内环位置控制实验" /> <img
-src="images/2-2-30.png" alt="图 30 估计和实际的交互力矩" /> <img
-src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
+
+
+
+
 <h2 id="基于高斯核-预设性能函数的柔性关节导纳控制">2.5
 基于高斯核-预设性能函数的柔性关节导纳控制</h2>
 <p>在人机交互中，兼顾强冲击力下的阻抗渲染精度和位置控制稳定性是一个挑战。考虑到预设性能函数可以保证交互轨迹跟踪的瞬态和稳态性能，我们目标是在基于预设性能函数的导纳控制策略下实现柔性关节的期望阻抗。然而，传统预设性能函数中恒定的稳态边界在受到陡变的外力干扰时，跟踪误差可能超出稳态边界，进而导致内环位置控制器失稳。</p>
@@ -612,7 +446,7 @@ src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-2outcome/" data-id="cm677117n0005hk7k5ehxcgi6" data-title="研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-2outcome/" data-id="cm6787qst0004m07kh553gokm" data-title="研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -650,63 +484,48 @@ src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
 双转子轴向磁通电机电磁场建模方法</h2>
 <p>与径向电机不同，轴向磁通电机定转子轴向布置，因此磁路呈三维分布。尽管三维有限元仿真具有较高精度，但存在耗时长、计算成本高的问题。另外有限元仿真无法揭示结构参数对电机电磁性能的内在影响机制。</p>
 <p>为此，项目提出一种准确、高效的轴向磁通电机电磁场建模方法。首先，采用伪三维法将轴向磁通电机转换成一系列具有二维磁路切片模型（图1(a)）。由于轴向磁通电机的双转子可能存在偏移，会导致两侧气隙磁场分布不均，因此，通过增加额外的气隙和永磁体域，提出精确子域法来建立转子偏移时的电磁解析模型（图1(b)）。针对端部效应（气隙磁密在内外径边缘处衰减），采用虚拟等效直线法进行建模，得到气隙磁密沿半径方向的变化规律（图2），计算结果表明采用该方法对气隙磁密分布进行修正可以使得齿槽转矩计算结果提升3.7%（图3）。该方法可以考虑两侧永磁体分布和定子槽深对气隙磁密分布的影响。另外，针对转子偏心下的气隙不均匀问题，采用许克变换将不均匀气隙转换成均匀气隙（图4），得到复数相对气隙磁导比函数，结合子域法可以得到转子偏心下的输出特性（图5），结果表明解析方法和有限元具有良好的一致性。</p>
-<p><img src="images/2-1-1.png" alt="图1 YASA电机建模" /> <img
-src="images/2-1-2.png" alt="图2 虚拟等效直线模型" /> <img
-src="images/2-1-3.png" alt="图3 齿槽转矩波形对比" /> <img
-src="images/2-1-4.png" alt="图4 转子偏心" /> <img src="images/2-1-5.png"
-alt="图5 转子偏心下的输出特性" /></p>
+
+
+
+
+
 <h2 id="基于固-液相变材料的力矩电机热场分布分析与高效散热方法">1.2
 基于固-液相变材料的力矩电机热场分布分析与高效散热方法</h2>
 <p>在机械臂工作周期内，关节电机的负载变化很大，当面临一些高倍过载工况时，电机热负荷高并给系统带来隐患。受限于狭小的关节空间，项目提出基于固-液相变材料（PCM）的电机散热方法，这是由于PCM具有高储能密度，在电机过载时提供“蓄热池”并由固态转换为液态，在电机低载荷工作时逐渐散热并还原为固态，图
 6即为所设计的关节力矩电机结构，在机壳的圆周分布上开设四个4.5mm厚度的槽孔用以灌封PCM，预留了一部分壳体防止壳体内热源积聚，这种设计兼具了体积与冷却能力。</p>
-<figure>
-<img src="images/2-1-6.png" alt="图 6 填充PCM的力矩电机结构" />
-<figcaption aria-hidden="true">图 6 填充PCM的力矩电机结构</figcaption>
-</figure>
+
 <p>电机的在能量转换过程中会产生各种损耗，这些损耗转换成热能的形式体现出来。在热场分析前，我们首先对关节力矩电机进行了电磁性能分析并得到电机各部件在不同的工况与转速下的损耗分布，结果如图
 7所示。</p>
-<figure>
-<img src="images/2-1-7.png" alt="图 7 关节力矩电机电磁分析结果" />
-<figcaption aria-hidden="true">图 7
-关节力矩电机电磁分析结果</figcaption>
-</figure>
+
 <p>下一步是对基于固-液相变材料的力矩电机进行热场分布分析。一般而言，电机热场通过集总参数热网络法（LPTN）和有限元法进行分析，由于LPTN具有突出的计算速度以及实验校准优势，因此其在实际工程应用中得到普遍应用。电机内大多部件为空心圆柱体，我们首先对电机本体采用经典“T型”热网络建模，如图
 8所示，每个有内热源的部分都经过“T型”等效建模，相较于传统“I型”建模，它具有更高的平均温度预测精度。</p>
-<figure>
-<img src="images/2-1-8.png" alt="图 8 基于“T型”原理的电机LPTN模型" />
-<figcaption aria-hidden="true">图 8
-基于“T型”原理的电机LPTN模型</figcaption>
-</figure>
+
 <p>对于机壳内PCM的建模而言，项目提出了基于解析近似与时步法的集总参数热网络建模，由于PCM在熔化过程中会随着温度不断变化，因此其相应的热阻热容值也在不断变化，简化后的模型如图
 9所示，其中热阻值
 根据所推导的熔融增量近似解析式由时步迭代求解获得，热容值根据PCM的平均温度以及材料自身的比热容属性插值计算获得，每一时间步长下模拟PCM的熔化，根据熔化情况对应每一时步下的热阻与热容值，最终与电机温度场耦合完成计算。</p>
-<figure>
-<img src="images/2-1-9.png" alt="图 9 PCM与电机机壳LPTN模型" />
-<figcaption aria-hidden="true">图 9 PCM与电机机壳LPTN模型</figcaption>
-</figure>
+
 <p>提出的模型在图
 10所示的关节电机对拖平台上进行了验证。将LPTN的仿真结果与实验数据进行了比较并量化了误差，如图
 11与图
 12所示。LPTN模型表征了这一过程的温度变化，平均绝对误差仅为0.76℃、1.02℃和0.91℃。在绕组温升预测方面，总体绝对预测误差均小于1.1℃，最大预测误差不超过4℃，均证明了所提出的模型能够成功模拟应用基于PCM的电机温度场。</p>
-<p><img src="images/2-1-10.png"
-alt="图 10 PCM电机机壳负载测试实验平台" /> <img src="images/2-1-11.png"
-alt="图 11 电机绕组温升测试与模型对比结果" /> <img
-src="images/2-1-12.png" alt="图 12 PCM温度测试与模型结果" /></p>
+
+
+
 <h2 id="双转子轴向磁通电机力矩提升方法">1.3
 双转子轴向磁通电机力矩提升方法</h2>
 <p>对于双转子轴向磁通电机而言，高输出力矩需要通过增加电机外径、减小定子裂比（内径/外径）来实现。但为实现机器人关节的轻量化和高转矩密度，电机通常需要具有外径小、大中空的构型，这极大限制了轴向磁通电机的输出力矩。</p>
 <p>基于此，结合复合软磁材料具有灵活三维构型的特点，项目提出了具有径向扩张、周向扩张、混合扩张结构的轴向磁通电机定子构型（图13），该结构不增加额外尺寸的前提下可以提升转矩。分析了不同扩张形式下的轴向磁通电机电磁性能（图14）；相较于无扩张结构，径向扩张、周向扩张、混合扩张的定子结构对转矩提升分别为19.2%、13.1%、28.3%。为进一步提升电矩和效率，降低电机有效成本，提出了轴向磁通电机分层优化策略（图15）。其流程为采用伪三维法+子域法进行初始设计，并利用灵敏度分析（皮尔逊系数）将优化变量分为高、低灵敏度层。对于高、低灵敏度层分别采用曲面响应和反向传播神经网络算法建立代理模型，并结合NSGA
 II算法进行多目标优化。分析结果表明优化后的双转子轴向磁通电机转矩提升20.2%，效率提升0.97%，成本仅增加3.6%（图16）。最后制作样机并搭建测试平台对优化后的轴向磁通电机进行性能测试，测试结果（反电动势、转矩等）表明理论值、有限元和实验结果具有较好的一致性（图17）。</p>
-<p><img src="images/2-1-13.png" alt="图13 定子齿部扩张结构" /> <img
-src="images/2-1-14.png" alt="图14 电磁转矩对比" /> <img
-src="images/2-1-15.png" alt="图15 分层优化架构" /> <img
-src="images/2-1-16.png" alt="图16 Pareto优化结果" /> <img
-src="images/2-1-17.png" alt="图17 实验测试" /></p>
+
+
+
+
+
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-1outcome/" data-id="cm677117m0002hk7k8oc13x0x" data-title="研究进展一：高效高转矩密度驱动-传动-储能一体化双向驱动关节设计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-1outcome/" data-id="cm6787qsq0000m07khmgxb7c7" data-title="研究进展一：高效高转矩密度驱动-传动-储能一体化双向驱动关节设计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -786,7 +605,7 @@ id="研究内容5轻量化协作机器人样机试制与实验验证">研究内�
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-0progres/" data-id="cm677117j0000hk7k7ybge6ov" data-title="二、研究工作主要进展、结果和影响" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-0progres/" data-id="cm6787qsu0006m07kfj1hf704" data-title="二、研究工作主要进展、结果和影响" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -966,7 +785,7 @@ id="课题五轻量化协作机器人样机试制与实验验证">课题五：�
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/1begin/" data-id="cm677117l0001hk7kdw9geipf" data-title="一、国家自然基金项目基本信息" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/1begin/" data-id="cm6787qss0001m07k3b0lfgry" data-title="一、国家自然基金项目基本信息" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -1009,10 +828,6 @@ id="课题五轻量化协作机器人样机试制与实验验证">课题五：�
       <ul>
         
           <li>
-            <a href="/2025/01/27/abstract/">1. 项目内容</a>
-          </li>
-        
-          <li>
             <a href="/2025/01/21/2-5outcome/">研究进展五：样机研制与人机交互应用示范</a>
           </li>
         
@@ -1026,6 +841,10 @@ id="课题五轻量化协作机器人样机试制与实验验证">课题五：�
         
           <li>
             <a href="/2025/01/21/2-2outcome/">研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/21/2-1outcome/">研究进展一：高效高转矩密度驱动-传动-储能一体化双向驱动关节设计</a>
           </li>
         
       </ul>

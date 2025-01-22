@@ -13,19 +13,10 @@
 <meta property="og:site_name" content="轻量化协作机器人设计方法与控制技术研究">
 <meta property="og:description" content="2.1 基于谐振和反谐振频率配置的关节设计方法 在一体化关节中，负载惯量由关节实际工作情况决定，而电机端惯量往往是关节重要的设计参数。定义关节惯量比为：R&#x3D;J_l&#x2F;(N^2 J_m)，N&#x3D;100。为了简化分析，忽略关节各部分的阻尼，可以得到关节的反谐振频率ω_a^f&#x3D;√(K&#x2F;J_l )，谐振频率为ω_r&#x3D;ω_a^f √(1+R)。 为了不同惯量比对关节动态特性的影响，将电机端惯量J_m设">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-18.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-19.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-20.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-24.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-25.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-26.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-27.png">
-<meta property="og:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-28.png">
 <meta property="article:published_time" content="2025-01-21T07:39:29.000Z">
 <meta property="article:modified_time" content="2025-01-22T00:48:49.714Z">
 <meta property="article:author" content="胡翰泽">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ucas-iamt.github.io/2025/01/21/2-2outcome/images/2-2-18.png">
   
     <link rel="alternate" href="/atom.xml" title="轻量化协作机器人设计方法与控制技术研究" type="application/atom+xml">
   
@@ -113,23 +104,13 @@ kg∙m^2，对应计算的惯量比依次为R=3.10，2.33，1.86，1.55，1.33�
 18所示，当惯量比R增大时，反谐振频率ω_a^f保持106.4 rad/s，谐振频率ω_r由
 48Hz 变为
 64Hz，增加了33.3%。也就是说，增大一体化关节的惯量比，会增大ω_a^f与ω_r的差距，有利于提高控制的稳定性。</p>
-<figure>
-<img src="images/2-2-18.png"
-alt="图 18 不同惯量比下，一体化关节的伯德图" />
-<figcaption aria-hidden="true">图 18
-不同惯量比下，一体化关节的伯德图</figcaption>
-</figure>
+
 <p>为了探究关节刚度对关节动态性能的影响，将刚度K_j依次设置为0.5，0.8，1，1.5，2倍的刚度19576
 Nm/rad。不同刚度下，关节的伯德图如图 19所示。
 随着一体化关节刚度的增加，系统的谐振与反谐振频率都会随之增大。系统的谐振频率ω_r由56
 Hz 变为74 Hz，增加了32.1%，反谐振频率ω_a^f由22 Hz 变为 44
 Hz，增加了100%。因此，关节刚度越大，一体化关节的动态响应就越好。</p>
-<figure>
-<img src="images/2-2-19.png"
-alt="图 19 不同刚度下，一体化关节的伯德图" />
-<figcaption aria-hidden="true">图 19
-不同刚度下，一体化关节的伯德图</figcaption>
-</figure>
+
 <p>综上，大惯量比、高刚度的关节，转矩控制性能更高，动态响应更好。因此，通过合理配置谐振频率与反谐振频率，并拉大谐振与反谐振频率的差距，可以为后续高带宽的协作机器人柔顺控制的实现打下基础。</p>
 <h2 id="高效高转矩密度一体化关节设计">2.2
 高效高转矩密度一体化关节设计</h2>
@@ -138,18 +119,15 @@ alt="图 19 不同刚度下，一体化关节的伯德图" />
 <p>我们制作了一体化关节样机，并搭建一体化关节正向、反向测试平台（图22）。测试结果表一体化关节的转矩密度分别为28.8
 N.m/kg、反向驱动力矩分别为1.36 N.m（（a）转矩-电流曲线
 （b）反向驱动转矩（正弦激励）图23）。总体而言，基于中空式轴向磁通电机+内置式行星减速器的一体化关节能较好的实现高转矩密度、良好的双向驱动效率和扁平化的外型。</p>
-<p><img src="images/2-2-20.png" alt="图20 一体化关节结构原理" /> <img
-src="images/2-2-21.png" alt="图21 磁场解析模型" /> <img
-src="images/2-2-22.png" alt="图22一体化关节样机" /> <img
-src="images/2-2-23.png" alt="图23 一体化关节测试结果" /></p>
+
+
+
+
 <h2 id="一体化关节样机试制">2.3 一体化关节样机试制</h2>
 <p>模块化关节作为轻量化协作机器人的核心驱动单元。为了满足不同的输出力矩需求，我们设计了大、中、小三款一体化关节。如((a)爆炸图
 (b) 实物图 图
 24)所示，关节主要由永磁力矩电机、谐波减速器、位置编码器、力矩传感器以及其他必要的结构部件组成。关节模块化的设计具有易拆装、易维护的优点和较高的输出力矩-自重比，同时，配备多种传感器。它的驱动控制单元集成在关节电机端，这保证了关节的驱动和控制的一体化设计，而输出法兰、制动器罩等机械零部件保证了关节的模块化应用需求，可以最大程度地减少关节结构的差异，增强关节零部件之间的互换性。高功率密度的力矩电机作为关节的动力源，高负载自重比和结构紧凑的谐波减速器作为关节的传动部件，高分辨率的电机端位置编码器和输出端位置编码器用来采集关节两端的位置信号，扭矩传感器用于获取关节运动中的扭矩。这样就形成兼具结构紧凑与轻量化的关节一体化集成设计。</p>
-<figure>
-<img src="images/2-2-24.png" alt="图 24 协作机器人一体化关节" />
-<figcaption aria-hidden="true">图 24 协作机器人一体化关节</figcaption>
-</figure>
+
 <p>关节的力矩电机为团队自主研发的表贴式三相永磁同步力矩电机。谐波减速器选用日本哈默纳科公司的CSG系列型号。电机端位置编码器选用东莞盈动高科公司的增量式编码器CAPRO系列型号，通讯协议为BISS通信，分辨率达到32768counts。负载端位置编码器选用以色列Netzer公司的绝对式编码器DS系列型号，通讯协议为SSI通信，分辨率达到524288counts。力矩传感器选用台湾煜昕科技有限公司的HD2-150和HD2-300系列型号，经过实测性能分析，力矩测量精度达到0.67%力幅，动态响应速度小于15ms，根据关节负载需求，分别采用150Nm
 和300Nm
 量程的力矩传感器。制动器选用COMBIPERM-P1.310系列型号，制动力矩大于2倍电机额定转矩。试制的大、中、小的一体化关节的各项设计参数如下表所示。</p>
@@ -289,34 +267,23 @@ src="images/2-2-23.png" alt="图23 一体化关节测试结果" /></p>
 基于双干扰观测器和预测前馈的柔性关节柔顺控制技术</h2>
 <p>柔性关节的柔顺控制依赖于准确的外力矩感知和有效的内部干扰补偿技术。以前的大多数工作是使用内置的扭矩传感器和基于单个编码器的集总干扰观测器，这增加了系统的重量和集成的成本。我们提出了双干扰观测器(DDOB)+前馈(FF)和反馈(FB)控制器的新型三元复合位置控制架构，该架构在内环中可以实现更好的跟踪精度和扰动拒止能力，整体的导纳控制架构如图
 25所示。</p>
-<figure>
-<img src="images/2-2-25.png"
-alt="图 25 基于内环“前馈+反馈+双干扰观测器”的柔性关节导纳控制架构" />
-<figcaption aria-hidden="true">图 25
-基于内环“前馈+反馈+双干扰观测器”的柔性关节导纳控制架构</figcaption>
-</figure>
+
 <p>在柔性关节中，摩擦力、环境对关节的交互力等低频干扰普遍存在，这显著降低了一体化关节的跟踪精度。因此，我们基于柔性关节双编码器的配置，设计了一种双干扰观测器(DDOB)。如图
 26所示，这种双干扰观测器实现了关节内部摩擦力矩和关节与外环境的交互力矩的分离式估计与抑制。该观测器结合前馈和反馈控制形成了一种新型的三元控制架构。相比传统的三元控制架构，可以实现更好的干扰抑制和位置控制性能，同时估计的外力矩可以导入期望的导纳模型中，从而实现柔性关节的无扭矩传感器导纳控制。</p>
-<figure>
-<img src="images/2-2-26.png" alt="图 26 双干扰观测器设计" />
-<figcaption aria-hidden="true">图 26 双干扰观测器设计</figcaption>
-</figure>
+
 <p>由于估计的外力经由导纳控制器会使得实际轨迹无法预知，进而导致前馈控制器实施困难，因此，如图
 27所示，我们提出了基于多项式外推的轨迹预测来为非因果部分的前馈控制器提供实时信号，而预测误差对输出造成的扰动可以通过最小节拍控制方法来补偿。具体是基于最古老时刻的预测信号和动态更新的比例系数来设计单一的误差补偿器，从而在有限时间间隔内实现扰动的消除。</p>
-<figure>
-<img src="images/2-2-27.png" alt="图 27 预测前馈控制器设计" />
-<figcaption aria-hidden="true">图 27 预测前馈控制器设计</figcaption>
-</figure>
+
 <p>提出的方法在如图
 28中搭建的柔顺关节实验平台上进行了验证。首先是内环的位置跟踪实验。假设参考轨迹预知，我们比较了四种不同的位置控制方法，四种方法包括前馈+反馈(E1)，前馈+反馈+电机端干扰观测器(E2)，前馈+反馈+连杆端干扰观测器(E3)和提出的前馈+反馈+双干扰观测器(E4)。从图
 29可以看出，这四种方法得到的最大跟踪误差分别为3.93mrad，3.62mrad，2.38mrad和2.00mand,
 而四种方法的均方根误差指标为1.53mrad，1.40mrad，0.71mrad和0.52mrad。提出的内环位置控制器E4相比传统方法至少降低跟踪误差26.8%；在导纳实验中，如图
 30，估计的外力矩和实际测量的外力矩基本吻合，证明了设计的外力矩估计器的正确性。如图
 31所示，提出的导纳控制架构实现的导纳特性与期望的导纳特性吻合度达91.38%，证明了提出方法的优越性。</p>
-<p><img src="images/2-2-28.png" alt="图 28 柔性关节实验平台" /> <img
-src="images/2-2-29.png" alt="图 29 内环位置控制实验" /> <img
-src="images/2-2-30.png" alt="图 30 估计和实际的交互力矩" /> <img
-src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
+
+
+
+
 <h2 id="基于高斯核-预设性能函数的柔性关节导纳控制">2.5
 基于高斯核-预设性能函数的柔性关节导纳控制</h2>
 <p>在人机交互中，兼顾强冲击力下的阻抗渲染精度和位置控制稳定性是一个挑战。考虑到预设性能函数可以保证交互轨迹跟踪的瞬态和稳态性能，我们目标是在基于预设性能函数的导纳控制策略下实现柔性关节的期望阻抗。然而，传统预设性能函数中恒定的稳态边界在受到陡变的外力干扰时，跟踪误差可能超出稳态边界，进而导致内环位置控制器失稳。</p>
@@ -335,7 +302,7 @@ src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-2outcome/" data-id="cm677117n0005hk7k5ehxcgi6" data-title="研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-2outcome/" data-id="cm6787qst0004m07kh553gokm" data-title="研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -395,10 +362,6 @@ src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
       <ul>
         
           <li>
-            <a href="/2025/01/27/abstract/">1. 项目内容</a>
-          </li>
-        
-          <li>
             <a href="/2025/01/21/2-5outcome/">研究进展五：样机研制与人机交互应用示范</a>
           </li>
         
@@ -412,6 +375,10 @@ src="images/2-2-31.png" alt="图 31 实际与期望的导纳模型" /></p>
         
           <li>
             <a href="/2025/01/21/2-2outcome/">研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/21/2-1outcome/">研究进展一：高效高转矩密度驱动-传动-储能一体化双向驱动关节设计</a>
           </li>
         
       </ul>
