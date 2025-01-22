@@ -6,20 +6,20 @@
   
   <title>研究进展四：轻量化协作机器人柔顺控制与振动抑制方法 | 轻量化协作机器人设计方法与控制技术研究</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="4.1 基于自适应跃度的协作机器人阻抗控制技术研究协作机器人在不同的环境交互任务中，如装配、打磨和人机协作等，不仅需要跟踪期望的参考轨迹，同时需要表征期望的阻抗特性，来满足任务空间的安全性和柔顺性。模型不确定性和干扰导致期望阻抗模型计算力和实际感知力存在偏差，降低了期望阻抗特性的表征性能。但是，现有基于预滤波或者自适应模型补偿的方法难以消除该力偏差。 针对在不确定性和外部干扰作用下阻抗控制力跟踪">
+  <meta name="description" content="4.1 基于自适应跃度的协作机器人阻抗控制技术研究协作机器人在不同的环境交互任务中，如装配、打磨和人机协作等，不仅需要跟踪期望的参考轨迹，同时需要表征期望的阻抗特性，来满足任务空间的安全性和柔顺性。模型不确定性和干扰导致期望阻抗模型计算力和实际感知力存在偏差，降低了期望阻抗特性的表征性能。但是，现有基于预滤波或者自适应模型补偿的方法难以消除该力偏差。 针对在不确定性和外部干扰作用下阻抗控制力跟踪精">
 <meta property="og:type" content="article">
 <meta property="og:title" content="研究进展四：轻量化协作机器人柔顺控制与振动抑制方法">
-<meta property="og:url" content="https://ucas-iamt.github.io/2025/01/21/2-4outcome/index.html">
+<meta property="og:url" content="https://ucas-iamt.github.io/2025/01/24/2-4outcome/index.html">
 <meta property="og:site_name" content="轻量化协作机器人设计方法与控制技术研究">
-<meta property="og:description" content="4.1 基于自适应跃度的协作机器人阻抗控制技术研究协作机器人在不同的环境交互任务中，如装配、打磨和人机协作等，不仅需要跟踪期望的参考轨迹，同时需要表征期望的阻抗特性，来满足任务空间的安全性和柔顺性。模型不确定性和干扰导致期望阻抗模型计算力和实际感知力存在偏差，降低了期望阻抗特性的表征性能。但是，现有基于预滤波或者自适应模型补偿的方法难以消除该力偏差。 针对在不确定性和外部干扰作用下阻抗控制力跟踪">
+<meta property="og:description" content="4.1 基于自适应跃度的协作机器人阻抗控制技术研究协作机器人在不同的环境交互任务中，如装配、打磨和人机协作等，不仅需要跟踪期望的参考轨迹，同时需要表征期望的阻抗特性，来满足任务空间的安全性和柔顺性。模型不确定性和干扰导致期望阻抗模型计算力和实际感知力存在偏差，降低了期望阻抗特性的表征性能。但是，现有基于预滤波或者自适应模型补偿的方法难以消除该力偏差。 针对在不确定性和外部干扰作用下阻抗控制力跟踪精">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ucas-iamt.github.io/images/2-4-57.png">
 <meta property="og:image" content="https://ucas-iamt.github.io/images/2-4-58.png">
 <meta property="og:image" content="https://ucas-iamt.github.io/images/2-4-59.png">
 <meta property="og:image" content="https://ucas-iamt.github.io/images/2-4-60.png">
 <meta property="og:image" content="https://ucas-iamt.github.io/images/2-4-61.png">
-<meta property="article:published_time" content="2025-01-21T07:45:18.000Z">
-<meta property="article:modified_time" content="2025-01-22T04:48:40.121Z">
+<meta property="article:published_time" content="2025-01-24T07:45:18.000Z">
+<meta property="article:modified_time" content="2025-01-22T11:55:00.777Z">
 <meta property="article:author" content="胡翰泽">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://ucas-iamt.github.io/images/2-4-57.png">
@@ -191,8 +191,8 @@ mjx-container[display="true"] + br {
       <div class="outer">
         <section id="main"><article id="post-2-4outcome" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2025/01/21/2-4outcome/" class="article-date">
-  <time class="dt-published" datetime="2025-01-21T07:45:18.000Z" itemprop="datePublished">2025-01-21</time>
+    <a href="/2025/01/24/2-4outcome/" class="article-date">
+  <time class="dt-published" datetime="2025-01-24T07:45:18.000Z" itemprop="datePublished">2025-01-24</time>
 </a>
     
   </div>
@@ -211,8 +211,7 @@ mjx-container[display="true"] + br {
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <!-- 图 58 期望和实际阻抗拟合程度【名称错误】(全文搜索) -->
-<h2 id="4-1-基于自适应跃度的协作机器人阻抗控制技术研究"><a href="#4-1-基于自适应跃度的协作机器人阻抗控制技术研究" class="headerlink" title="4.1 基于自适应跃度的协作机器人阻抗控制技术研究"></a>4.1 基于自适应跃度的协作机器人阻抗控制技术研究</h2><p>协作机器人在不同的环境交互任务中，如装配、打磨和人机协作等，不仅需要跟踪期望的参考轨迹，同时需要表征期望的阻抗特性，来满足任务空间的安全性和柔顺性。模型不确定性和干扰导致期望阻抗模型计算力和实际感知力存在偏差，降低了期望阻抗特性的表征性能。但是，现有基于预滤波或者自适应模型补偿的方法难以消除该力偏差。</p>
+        <h2 id="4-1-基于自适应跃度的协作机器人阻抗控制技术研究"><a href="#4-1-基于自适应跃度的协作机器人阻抗控制技术研究" class="headerlink" title="4.1 基于自适应跃度的协作机器人阻抗控制技术研究"></a>4.1 基于自适应跃度的协作机器人阻抗控制技术研究</h2><p>协作机器人在不同的环境交互任务中，如装配、打磨和人机协作等，不仅需要跟踪期望的参考轨迹，同时需要表征期望的阻抗特性，来满足任务空间的安全性和柔顺性。模型不确定性和干扰导致期望阻抗模型计算力和实际感知力存在偏差，降低了期望阻抗特性的表征性能。但是，现有基于预滤波或者自适应模型补偿的方法难以消除该力偏差。</p>
 <p>针对在不确定性和外部干扰作用下阻抗控制力跟踪精度差的问题，设计基于自定义零点的级联滤波器，</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
@@ -225,7 +224,7 @@ D_{\mathrm{x}}(q) \dot{z}_3=-\dot{D}_{\mathrm{x}}(q) z_3 / 2+\tilde{F}+F_d-\dot{
 \|\Delta\| \leq V^{1 / 2}\left(t_0\right) e^{-\eta_1 t} / \eta_2, \quad \forall t \geq t_0</script><p>相比现有阻抗控制算法，基于自适应跃度的鲁棒阻抗控制不依赖精确动力学模型；提出滑模自适应律能够根据不确定性大小，自动调节反馈增益，有效抑制柔性关节的振动。</p>
 <p><img src="/images/2-4-57.png" alt="图 57 基于自适应跃度的协作机器人阻抗控制框架"></p>
 <p>为了验证阻抗控制效果，使机器人保持一定的位姿，在其末端突然施加外力，机器人表现出期望的阻抗特性，如图 58所示。在阻抗控制器中设置期望惯性矩阵、阻尼矩阵和刚度矩阵分别为，Md = diag{2, 2, 2},Bd = diag{60, 80, 50}, Kd = diag{100, 120, 75}，在机器人末端安装六维力传感器实现交互力的实时反馈，其精度为±0.2N。为了验证方法的先进性，对比了实际和期望的阻抗拟合水平，如图 59所示。</p>
-<p><img src="/images/2-4-58.png" alt="图 58 期望和实际阻抗拟合程度【名称错误】"><br><img src="/images/2-4-59.png" alt="图 59 期望和实际阻抗拟合程度"></p>
+<p><img src="/images/2-4-58.png" alt="图 58 协作机器人柔顺控制实验平台"><br><img src="/images/2-4-59.png" alt="图 59 期望和实际阻抗拟合程度"></p>
 <h2 id="4-2-基于运动意图估计和力前馈补偿的人机协作神经导纳控制"><a href="#4-2-基于运动意图估计和力前馈补偿的人机协作神经导纳控制" class="headerlink" title="4.2 基于运动意图估计和力前馈补偿的人机协作神经导纳控制"></a>4.2 基于运动意图估计和力前馈补偿的人机协作神经导纳控制</h2><p>研究了运动意图估计与力前馈补偿在人机协作任务的应用，提出了一种基于运动意图估计与力前馈补偿的神经网络阻抗控制方法（图 60），基于人体肢体动力学模型，通过最大似然估计估计人体刚度和意图位置，不需要人为给定先验知识，利用数据收敛到真实值，在估计人体意图和刚度的基础上，提出力前馈补偿来最小化交互力和位置跟踪波动，在导纳控制的基础上结合人体意图、力前馈补偿和RBFNN位置控制内环提出了一个完整的人机协作框架，解决了在人机协作中机器人无法感知人类意图而造成的被动协作和能量消耗大的问题。</p>
 <p><img src="/images/2-4-60.png" alt="图 60 运动意图估计和力前馈框架"></p>
 <p>在人机协作搬运实验中，验证了所提成人类意图估计和力前馈补偿的神经导纳控制框架相比较传统导纳控制，平均减小人类伙伴能量消耗50%，提高了0.3s的位置响应速度，增强了人机协作中的交互柔顺性。本方法使人类操作者和机器人具有直接的力和运动的交互，则可以充分发挥人类操作者在环境感知、理解、判断和决策方面的优势，结合机器人精准、不知疲倦的优点，形成优势互补，尤其是在医疗、遥操作、社会服务等领域具有突出的技术优势和良好的应用前景。</p>
@@ -238,7 +237,7 @@ D_{\mathrm{x}}(q) \dot{z}_3=-\dot{D}_{\mathrm{x}}(q) z_3 / 2+\tilde{F}+F_d-\dot{
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ucas-iamt.github.io/2025/01/21/2-4outcome/" data-id="cm67az2wc00055c7kd8cmfwn5" data-title="研究进展四：轻量化协作机器人柔顺控制与振动抑制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://ucas-iamt.github.io/2025/01/24/2-4outcome/" data-id="cm67az2wc00055c7kd8cmfwn5" data-title="研究进展四：轻量化协作机器人柔顺控制与振动抑制方法" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -248,19 +247,19 @@ D_{\mathrm{x}}(q) \dot{z}_3=-\dot{D}_{\mathrm{x}}(q) z_3 / 2+\tilde{F}+F_d-\dot{
     
 <nav id="article-nav">
   
-    <a href="/2025/01/21/2-5outcome/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2025/01/25/2-3outcome/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
-          研究进展五：样机研制与人机交互应用示范
+          研究进展三：协作机器人轻量化设计
         
       </div>
     </a>
   
   
-    <a href="/2025/01/21/2-3outcome/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2025/01/23/2-5outcome/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">研究进展三：协作机器人轻量化设计</div>
+      <div class="article-nav-title">研究进展五：样机研制与人机交互应用示范</div>
     </a>
   
 </nav>
@@ -298,23 +297,23 @@ D_{\mathrm{x}}(q) \dot{z}_3=-\dot{D}_{\mathrm{x}}(q) z_3 / 2+\tilde{F}+F_d-\dot{
       <ul>
         
           <li>
-            <a href="/2025/01/21/2-5outcome/">研究进展五：样机研制与人机交互应用示范</a>
+            <a href="/2025/01/29/1begin/">一、国家自然基金项目基本信息</a>
           </li>
         
           <li>
-            <a href="/2025/01/21/2-4outcome/">研究进展四：轻量化协作机器人柔顺控制与振动抑制方法</a>
+            <a href="/2025/01/28/2-0progres/">二、研究工作主要进展、结果和影响</a>
           </li>
         
           <li>
-            <a href="/2025/01/21/2-3outcome/">研究进展三：协作机器人轻量化设计</a>
+            <a href="/2025/01/27/2-1outcome/">研究进展一：高效高转矩密度驱动-传动-储能一体化双向驱动关节设计</a>
           </li>
         
           <li>
-            <a href="/2025/01/21/2-2outcome/">研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法</a>
+            <a href="/2025/01/26/2-2outcome/">研究进展二 ：一体化关节集成优化设计方法与高带宽控制方法</a>
           </li>
         
           <li>
-            <a href="/2025/01/21/2-1outcome/">研究进展一：高效高转矩密度驱动-传动-储能一体化双向驱动关节设计</a>
+            <a href="/2025/01/25/2-3outcome/">研究进展三：协作机器人轻量化设计</a>
           </li>
         
       </ul>
